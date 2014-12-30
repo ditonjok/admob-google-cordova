@@ -307,7 +307,7 @@ public class AdMobAds extends CordovaPlugin implements IConnectivityChange {
         } else if (adSize == AdSize.SMART_BANNER) { // Screen width x 32|50|90
           DisplayMetrics metrics = DisplayInfo(AdMobAds.this.cordova.getActivity());
           if (metrics.widthPixels >= 768) {
-            adView.setAdSize(new AdSize(768, 90));
+            adView.setAdSize(new AdSize(768, 50));
           } else {
             adView.setAdSize(AdSize.BANNER);
           }
